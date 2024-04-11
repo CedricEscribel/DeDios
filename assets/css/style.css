@@ -658,6 +658,7 @@ section {
 }
 
 
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -892,13 +893,13 @@ section {
   #testimonials::before {
     content: '';
     position: absolute;
-    top: -10px; /* Adjust as needed */
-    left: -10px; /* Adjust as needed */
-    right: -10px; /* Adjust as needed */
-    bottom: -10px; /* Adjust as needed */
+    top: -20px; /* Adjust as needed */
+    left: -20px; /* Adjust as needed */
+    right: -20px; /* Adjust as needed */
+    bottom: -20px; /* Adjust as needed */
     z-index: -1;
     background-color: #3498db; /* Same as section background */
-    border-radius: 20px; /* Border radius */
+    border-radius: 25px; /* Border radius */
   }
 
 
