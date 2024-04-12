@@ -111,8 +111,8 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
-  transition: all 0.5s;
+  background: rgb(255,255,255);
+  background: linear-gradient(80deg, rgba(255,255,255,1) 0%, rgba(235,247,249,1) 10%, rgba(15,116,188,1) 48%, rgba(68,14,98,1) 86%);  transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -152,9 +152,9 @@ h6 {
 .Login-btn {
   margin-left: 25px;
   background: #583FBC;
-  color: #fff;
+  color: white;
   border-radius: 4px;
-  padding: 8px 25px;
+  padding: 8px 40px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
@@ -162,8 +162,8 @@ h6 {
 }
 
 .Login-btn:hover {
-  background: #65c9cd;
-  color: #fff;
+  background: #9fd6d8;
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -203,7 +203,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
-  color: #626262;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
   text-transform: uppercase;
@@ -221,72 +221,10 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #583FBC;
+  color: #440E62;
 }
 
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
-}
 
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  text-transform: none;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  color: #583FBC;
-}
-
-.navbar .dropdown:hover>ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover>ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-  }
-}
 
 /**
 * Mobile Navigation 
@@ -400,7 +338,7 @@ h6 {
   background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.3) 100%), url(../img/hero.png);
   position: relative;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: inherit;
   
 }
 
