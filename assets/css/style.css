@@ -397,8 +397,11 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-section {
-  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.3) 70%), url(../img/hero.png);
+  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.3) 100%), url(../img/hero.png);
   position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
 }
 
 .hero-section .wave {
@@ -696,10 +699,23 @@ section {
   margin: 5px 0 10px 60px;
 }
 
-.features .icon-box i {
-  font-size: 48px;
-  float: left;
+.features .details p, h1{
+  margin-bottom: 25px;
+}
+
+.features li{
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.features li i{
+  margin-right: 10px;
   color: #583FBC;
+}
+
+.features .details h4{
+opacity: .5;
+margin-bottom: 35px;
 }
 
 .features .icon-box p {
@@ -713,7 +729,20 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
+  background: url('../img/expert.png');
+  max-width: 40%;
+  padding-bottom: 40%; /* Added padding-bottom to maintain aspect ratio */
+  right: 10px;
+
 }
+
+@media (max-width: 992px)   {
+  .features .image {
+    display: none;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Services
@@ -887,16 +916,13 @@ section {
     border-radius: 20px; /* Border radius */
     padding: 20px; /* Add some padding */
     margin-bottom: 20px; /* Add some space at the bottom */
+    margin: 50px;
   }
 
   /* This creates the floating effect */
   #testimonials::before {
     content: '';
     position: absolute;
-    top: -20px; /* Adjust as needed */
-    left: -20px; /* Adjust as needed */
-    right: -20px; /* Adjust as needed */
-    bottom: -20px; /* Adjust as needed */
     z-index: -1;
     background-color: #3498db; /* Same as section background */
     border-radius: 25px; /* Border radius */
