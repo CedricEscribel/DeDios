@@ -926,6 +926,14 @@ s
 }
 
 
+.appointment .appointmentform{
+  width: 70%;
+  background-color: white;
+  box-shadow: 5px 8px #888888;;
+  border-radius: 25px;
+  padding: 15px;
+}
+
 .appointment {
   background-image: url("../img/hero.png");
 
