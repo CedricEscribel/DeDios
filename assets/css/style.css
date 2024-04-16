@@ -1,5 +1,3 @@
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -9,7 +7,7 @@ body {
 }
 
 a {
-  color: #583FBC;
+  color: #583fbc;
   text-decoration: none;
 }
 
@@ -46,7 +44,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #583FBC;
+  border: 6px solid #583fbc;
   border-top-color: #ecf8f9;
   border-radius: 50%;
   width: 60px;
@@ -74,7 +72,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #583FBC;
+  background: #583fbc;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -106,13 +104,19 @@ h6 {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgb(255,255,255);
-  background: linear-gradient(80deg, rgba(255,255,255,1) 0%, rgba(235,247,249,1) 10%, rgba(15,116,188,1) 48%, rgba(68,14,98,1) 86%);  transition: all 0.5s;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    80deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 247, 249, 1) 10%,
+    rgba(15, 116, 188, 1) 48%,
+    rgba(68, 14, 98, 1) 86%
+  );
+  transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -145,7 +149,6 @@ h6 {
 #header .logo img {
   max-height: 40px;
 }
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -194,8 +197,8 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
-  color: #440E62;
+.navbar li:hover > a {
+  color: #440e62;
 }
 
 .navbar .getstarted,
@@ -282,8 +285,8 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #583FBC;
+.navbar-mobile li:hover > a {
+  color: #583fbc;
 }
 
 .navbar-mobile .Loginbtn,
@@ -292,16 +295,19 @@ h6 {
   color: #37517e;
 }
 
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero-section {
-  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.3) 100%), url(../img/hero.png);
+  background: linear-gradient(
+      to right,
+      rgba(39, 70, 133, 0.8) 0%,
+      rgba(61, 179, 197, 0.3) 100%
+    ),
+    url(../img/hero.png);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .hero-section .wave {
@@ -323,7 +329,7 @@ h6 {
 }
 
 .hero-section,
-.hero-section>.container>.row {
+.hero-section > .container > .row {
   height: 100vh;
   min-height: 880px;
 }
@@ -386,7 +392,7 @@ h6 {
 
 .hero-section .btn:hover {
   background: #fff;
-  color: #583FBC;
+  color: #583fbc;
 }
 
 /*--------------------------------------------------------------
@@ -413,7 +419,7 @@ h6 {
 #heropage h5 {
   color: black;
   margin-bottom: 50px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #heropage .btn-get-started {
@@ -433,8 +439,6 @@ h6 {
 #heropage .btn-get-started:hover {
   background: #209dd8;
 }
-
-
 
 #heropage .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -591,7 +595,7 @@ h6 {
   color: #fff;
 }
 
-.team .member .social a+a {
+.team .member .social a + a {
   margin-left: 8px;
 }
 
@@ -605,6 +609,8 @@ section {
 
 .section-bg {
   background-color: #f7fcfc;
+  background-size: cover;
+
 }
 
 .section-title {
@@ -627,7 +633,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #583FBC;
+  background: #583fbc;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -673,11 +679,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -725,7 +731,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #583FBC;
+  background: #583fbc;
   top: 0;
   border-radius: 0px;
 }
@@ -737,7 +743,7 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #583FBC;
+  color: #583fbc;
   transition: all 0.3s ease-in-out;
 }
 
@@ -763,10 +769,8 @@ section {
 }
 
 .featured-services .icon-box:hover .icon i {
-  color: #583FBC;
+  color: #583fbc;
 }
-
-
 
 /*--------------------------------------------------------------
 # About Us
@@ -788,13 +792,12 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #583FBC;
+  color: #583fbc;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
 
 /*--------------------------------------------------------------
 # Features
@@ -805,23 +808,24 @@ section {
   margin: 5px 0 10px 60px;
 }
 
-.features .details p, h1{
+.features .details p,
+h1 {
   margin-bottom: 25px;
 }
 
-.features li{
+.features li {
   list-style-type: none;
   margin-bottom: 15px;
 }
 
-.features li i{
+.features li i {
   margin-right: 10px;
-  color: #583FBC;
+  color: #583fbc;
 }
 
-.features .details h4{
-opacity: .5;
-margin-bottom: 35px;
+.features .details h4 {
+  opacity: 0.5;
+  margin-bottom: 35px;
 }
 
 .features .icon-box p {
@@ -835,20 +839,17 @@ margin-bottom: 35px;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
-  background: url('../img/expert.png');
+  background: url("../img/expert.png");
   max-width: 40%;
   padding-bottom: 40%; /* Added padding-bottom to maintain aspect ratio */
   right: 10px;
-
 }
 
-@media (max-width: 992px)   {
+@media (max-width: 992px) {
   .features .image {
     display: none;
   }
 }
-
-
 
 /*--------------------------------------------------------------
 # Services
@@ -868,7 +869,7 @@ margin-bottom: 35px;
   background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  color: #583FBC;
+  color: #583fbc;
   overflow: hidden;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
 }
@@ -896,7 +897,7 @@ margin-bottom: 35px;
 }
 
 .services .title a:hover {
-  color: #583FBC;
+  color: #583fbc;
 }
 
 .services .title::after {
@@ -905,7 +906,7 @@ margin-bottom: 35px;
   display: block;
   width: 50px;
   height: 2px;
-  background: #583FBC;
+  background: #583fbc;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -916,10 +917,18 @@ margin-bottom: 35px;
 }
 
 /*--------------------------------------------------------------
-# Appointments
+# 
+s
 --------------------------------------------------------------*/
 .appointment .php-email-form {
   width: 100%;
+  
+}
+
+
+.appointment {
+  background-image: url("../img/hero.png");
+
 }
 
 .appointment .php-email-form .form-group {
@@ -943,7 +952,7 @@ margin-bottom: 35px;
   font-weight: 600;
 }
 
-.appointment .php-email-form .error-message br+br {
+.appointment .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -987,7 +996,7 @@ margin-bottom: 35px;
 .appointment .php-email-form input:focus,
 .appointment .php-email-form textarea:focus,
 .appointment .php-email-form select:focus {
-  border-color: #583FBC;
+  border-color: #583fbc;
 }
 
 .appointment .php-email-form input,
@@ -999,8 +1008,8 @@ margin-bottom: 35px;
   padding: 10px 12px;
 }
 
-.appointment .php-email-form button[type=submit] {
-  background: #583FBC;
+.appointment .php-email-form button[type="submit"] {
+  background: #583fbc;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1008,32 +1017,30 @@ margin-bottom: 35px;
   border-radius: 50px;
 }
 
-.appointment .php-email-form button[type=submit]:hover {
+.appointment .php-email-form button[type="submit"]:hover {
   background: #52c2c6;
 }
-
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 #testimonials {
-    position: relative;
-    background-color: #3498db; /* Blue background color */
-    border-radius: 20px; /* Border radius */
-    padding: 20px; /* Add some padding */
-    margin-bottom: 20px; /* Add some space at the bottom */
-    margin: 50px;
-  }
+  position: relative;
+  background-color: #3498db; /* Blue background color */
+  border-radius: 20px; /* Border radius */
+  padding: 20px; /* Add some padding */
+  margin-bottom: 20px; /* Add some space at the bottom */
+  margin: 50px;
+}
 
-  /* This creates the floating effect */
-  #testimonials::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    background-color: #3498db; /* Same as section background */
-    border-radius: 25px; /* Border radius */
-  }
-
+/* This creates the floating effect */
+#testimonials::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #3498db; /* Same as section background */
+  border-radius: 25px; /* Border radius */
+}
 
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
@@ -1107,13 +1114,12 @@ margin-bottom: 35px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #583FBC;
+  border: 1px solid #583fbc;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #583FBC;
+  background-color: #583fbc;
 }
-
 
 /*--------------------------------------------------------------
 # Gallery
@@ -1132,11 +1138,11 @@ margin-bottom: 35px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #583FBC;
+  border: 1px solid #583fbc;
 }
 
 .gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #583FBC;
+  background-color: #583fbc;
 }
 
 .gallery .swiper-slide-active {
@@ -1149,7 +1155,7 @@ margin-bottom: 35px;
   }
 
   .gallery .swiper-slide-active {
-    border: 6px solid #583FBC;
+    border: 6px solid #583fbc;
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -1157,7 +1163,6 @@ margin-bottom: 35px;
     margin-top: 10px;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Frequently Asked Questioins
@@ -1180,7 +1185,7 @@ margin-bottom: 35px;
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #583FBC;
+  font-family: #583fbc;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1211,7 +1216,7 @@ margin-bottom: 35px;
 }
 
 .faq .faq-list .collapsed:hover {
-  color: #583FBC;
+  color: #583fbc;
 }
 
 .faq .faq-list .collapsed .icon-show {
@@ -1223,7 +1228,6 @@ margin-bottom: 35px;
   display: none;
   transition: 0.6s;
 }
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -1262,7 +1266,7 @@ margin-bottom: 35px;
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #583FBC;
+  background: #583fbc;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1298,7 +1302,7 @@ margin-bottom: 35px;
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #583FBC;
+  color: #583fbc;
   font-size: 18px;
   line-height: 1;
 }
@@ -1321,5 +1325,5 @@ margin-bottom: 35px;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #583FBC;
+  color: #583fbc;
 }
