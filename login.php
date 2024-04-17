@@ -24,6 +24,8 @@ session_start();
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+    <link href="assets/css/login.css" rel="stylesheet" />
+
     <script src="./include.js"></script>
 </head>
 
@@ -49,7 +51,7 @@ session_start();
                         <a class="nav-link scrollto" href="#appointment">Contact Us</a>
                     </li>
                     <li>
-                        <a class="getstarted Loginbtn scrollto" href="#about">Login</a>
+                        <a class="getstarted Loginbtn scrollto" href="./login.php">Login</a>
                     </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -64,62 +66,77 @@ session_start();
         <section id="appointment" class="appointment section-bg" style="padding-top: 10%">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>Make an Appointment</h2>
+                    <h2>Log In</h2>
                     <p>
-                        "Contact us today to experience top-notch dental care and
-                        personalized service that puts your oral health first."
+                        "Log in today to experience top-notch dental care and personalized service that puts your oral health first."
                     </p>
                 </div>
 
-                <div class="container appointmentform">
+                <div class="container ">
                     <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row">
-                            <div class="col-md-4 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
-                            </div>
-                            <div class="col-md-4 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
-                            </div>
-                            <div class="col-md-4 form-group mt-3 mt-md-0">
-                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 form-group mt-3">
-                                <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required />
-                            </div>
-                            <div class="col-md-4 form-group mt-3">
-                                <select name="department" id="department" class="form-select">
-                                    <option value="">Select Department</option>
-                                    <option value="Department 1">Department 1</option>
-                                    <option value="Department 2">Department 2</option>
-                                    <option value="Department 3">Department 3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4 form-group mt-3">
-                                <select name="Services" id="Services" class="form-select">
-                                    <option value="">Services</option>
-                                    <option value="Teeth Whitening">Teeth Whitening</option>
-                                    <option value="Service 2">Service 2</option>
-                                    <option value="Service 3">Service 3</option>
-                                </select>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <div class="card login-wrap">
+                                        <div class="card-body login-html">
+                                            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+                                            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                                            <div class="login-form">
+                                                <div class="sign-in-htm">
+                                                    <div class="form-group">
+                                                        <label for="user" class="label">Username</label>
+                                                        <input id="user" type="text" class="form-control input">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="pass" class="label">Password</label>
+                                                        <input id="pass" type="password" class="form-control input" data-type="password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check" checked>
+                                                            <label class="custom-control-label" for="check">Keep me Signed in</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btn btn-primary button" value="Sign In">
+                                                    </div>
+                                                    <div class="hr"></div>
+                                                    <div class="foot-lnk">
+                                                        <a href="#forgot">Forgot Password?</a>
+                                                    </div>
+                                                </div>
+                                                <div class="sign-up-htm">
+                                                    <div class="form-group">
+                                                        <label for="user" class="label">Username</label>
+                                                        <input id="user" type="text" class="form-control input">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="pass" class="label">Password</label>
+                                                        <input id="pass" type="password" class="form-control input" data-type="password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="pass" class="label">Repeat Password</label>
+                                                        <input id="pass" type="password" class="form-control input" data-type="password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="pass" class="label">Email Address</label>
+                                                        <input id="pass" type="text" class="form-control input">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btn btn-primary button" value="Sign Up">
+                                                    </div>
+                                                    <div class="hr"></div>
+                                                    <div class="foot-lnk">
+                                                        <label for="tab-1">Already Member?</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-                        </div>
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">
-                                Your appointment request has been sent successfully. Thank
-                                you!
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit">Make an Appointment</button>
-                        </div>
                     </form>
                 </div>
             </div>
