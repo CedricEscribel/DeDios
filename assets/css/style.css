@@ -999,6 +999,193 @@ h1 {
   font-size: 14px;
 }
 
+
+/* Service Hero */
+#serviceHero {
+  width: 100%;
+  height: 100vh;
+}
+
+#serviceHero .container {
+  padding-top: 72px;
+}
+
+#serviceHero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: black;
+  margin-bottom: 25px;
+}
+
+#serviceHero h5 {
+  color: black;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+#serviceHero .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+
+#serviceHero .btn-get-started:hover {
+  background: #209dd8;
+}
+
+#serviceHero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+  #serviceHero {
+    height: 100vh;
+    text-align: center;
+  }
+
+  #serviceHero .animated {
+    animation: none;
+  }
+
+  #serviceHero .serviceHero-img {
+    text-align: center;
+  }
+
+  #serviceHero .serviceHero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #serviceHero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #serviceHero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #serviceHero .serviceHero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #serviceHero .serviceHero-img img {
+    width: 80%;
+  }
+
+  #serviceHero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+  border-radius: 50px;
+  max-height: 50%;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Symptoms
+--------------------------------------------------------------*/
+.Symptoms .container {
+  box-shadow: 0 5px 25px 0 rgba(29, 94, 160, 0.6);
+  background: #DBDEFA;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.Symptoms .icon-box+.icon-box {
+  margin-top: 50px;
+}
+
+.Symptoms .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: #f3f8fa;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.Symptoms .icon-box .icon i {
+  color: #68A4C4;
+  font-size: 32px;
+}
+
+.Symptoms .icon-box:hover .icon {
+  background: #68A4C4;
+}
+
+.Symptoms .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.Symptoms .icon-box .title {
+  margin-left: 95px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.Symptoms .icon-box .title a {
+  color: #343a40;
+  transition: 0.3s;
+}
+
+.Symptoms .icon-box .title a:hover {
+  color: #68A4C4;
+}
+
+.Symptoms .icon-box .description {
+  margin-left: 95px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+
 /*--------------------------------------------------------------
 # 
 s
