@@ -1,29 +1,65 @@
 <?php
-include "./config.php";
+include "../phpconfig/config.php";
+session_start();
 
-$Name = $_POST['Name'];
-$Email = $_POST['Email'];
-$Password = $_POST['Password'];
-$Password = $_POST["User"];
+if (
+   isset($_POST['Emaillog']) &&
+   isset($_POST['Passwordlog'])
+) {
 
-$emailValid = "select * from signup where (Email='$Email');";
+   $Emaillog = $_POST['Emaillog'];
+   $Passwordlog = $_POST['Passwordlog'];
 
-$res = mysqli_query($con, $emailValid);
+   $data = "Emaillog=" . $Emaillog;
 
-if (mysqli_num_rows($res) > 0) {
-    $row = mysqli_fetch_assoc($res);
-    if ($Email == isset($row['Email'])) {
-        $em = "email already exists";
-        header("Location: ../login.php?errorsign=$em");
-    }
+   if (empty($Emaillog)) {
+      $em = "Email is required";
+      header("Location: ../login.php?error=$em&$data");
+      exit;
+   } else if (empty($Passwordlog)) {
+      $em = "Password is required";
+      header("Location: ../login.php?error=$em&$data");
+      exit;
+   } else {
+
+      $sql = "SELECT * FROM signup WHERE Email = ?";
+      $stmt = $conn->prepare($sql);
+      $stmt->execute([$Emaillog]);
+
+      if ($stmt->rowCount() == 1) {
+         $user = $stmt->fetch();
+
+         $Email =  $user['Email'];
+         $Password =  $user['Password'];
+         $Name =  $user['Name'];
+         $UserID =  $user['UserID'];
+         $Role =  $user['Role'];
+
+         if ($Email === $Emaillog) {
+            if (password_verify($Passwordlog, $Password)) {
+               $_SESSION['UserID'] = $UserID;
+               $_SESSION['Name'] = $Name;
+               $_SESSION['Role'] = $Role;
+
+               header("Location: ../index.php ");
+               exit;
+            } else {
+               $em = "Incorrect Password";
+               header("Location: ../login.php?error=$em&$data");
+               exit;
+            }
+         } else {
+            $em = "Incorrect Email or Password";
+            header("Location: ../login.php?error=$em&$data");
+            exit;
+         }
+      } else {
+         $em = "Incorrect Email";
+         header("Location: ../login.php?error=$em&$data");
+         exit;
+      }
+   }
 } else {
-
-    $Password = password_hash($Password, PASSWORD_DEFAULT);
-
-    $sql = "INSERT INTO signup (Name, Email, Password, Role) 
-                    VALUES(?,?,?,?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute([$Name, $Email, $Password, $Role]);
-    header("Location: ../login.php?successsign=Your account has been created successfully");
-    exit;
+   header("Location: ../login.php?error=error");
+   exit;
 }

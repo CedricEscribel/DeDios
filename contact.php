@@ -1,3 +1,9 @@
+<?php
+include "phpconfig/config.php";
+session_start();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +18,7 @@
     <link href="assets/img/icon.png" rel="icon" />
     <link href="assets/img/icon.png " />
 
-    <div html-include="./links.html"></div>
+    <div html-include="./links.php"></div>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -24,18 +30,18 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
-        <a href="index.html" class="logo me-auto"
+        <a href="index.php" class="logo me-auto"
           ><img src="assets/img/logo.png" alt=""
         /></a>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="./index.php">Home</a></li>
             <li>
-              <a class="nav-link scrollto" href="./services.html">Our Services</a>
+              <a class="nav-link scrollto" href="./services.php">Our Services</a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="./aboutus.html">About Us</a>
+              <a class="nav-link scrollto" href="./aboutus.php">About Us</a>
             </li>
             <li>
               <a class="nav-link scrollto" href="#Patient">New Patient</a>
@@ -86,6 +92,7 @@
                     name="name"
                     class="form-control"
                     id="name"
+                    value=""
                     placeholder="Your Name"
                     required
                   />
@@ -166,14 +173,14 @@
       <!-- End Appointment Section -->
 
       <!-- ======= ourclinic ======= -->
-      <div html-include="./pages/ourclinic.html"></div>
+      <div html-include="./pages/ourclinic.php"></div>
 
       <!-- End ourclinic -->
     </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <div html-include="./pages/footer.html"></div>
+    <div html-include="./pages/footer.php"></div>
 
     <!-- End Footer -->
 

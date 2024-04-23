@@ -12,7 +12,7 @@
     <link href="assets/img/icon.png" rel="icon" />
     <link href="assets/img/icon.png " />
 
-    <div html-include="./links.html"></div>
+    <div html-include="./links.php"></div>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -24,7 +24,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
-        <a href="index.html" class="logo me-auto"
+        <a href="index.php" class="logo me-auto"
           ><img src="assets/img/logo.png" alt=""
         /></a>
 
@@ -35,13 +35,13 @@
               <a class="nav-link scrollto" href="#services">Our Services</a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="./aboutus.html">About Us</a>
+              <a class="nav-link scrollto" href="./aboutus.php">About Us</a>
             </li>
             <li>
               <a class="nav-link scrollto" href="#Patient">New Patient</a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="./contact.html">Contact Us</a>
+              <a class="nav-link scrollto" href="./contact.php">Contact Us</a>
             </li>
             <li>
               <a class="getstarted Loginbtn scrollto" href="./login.php">Login</a>
@@ -55,20 +55,20 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <div html-include="./pages/hero.html"></div>
+    <div html-include="./pages/hero.php"></div>
     <!-- End Hero -->
 
     <main id="main">
       <!-- ======= Services Section ======= -->
-      <div html-include="./pages/services.html"></div>
+      <div html-include="./pages/services.php"></div>
       <!-- End Services Section -->
 
       <!-- ======= About Us Section ======= -->
-      <div html-include="./pages/whyus.html"></div>
+      <div html-include="./pages/whyus.php"></div>
       <!-- End About Us Section -->
 
       <!-- ======= Features Section ======= -->
-      <div html-include="./pages/features.html"></div>
+      <div html-include="./pages/features.php"></div>
       <!-- End Features Section -->
 
       <!-- ======= Testimonials Section ======= -->
@@ -204,7 +204,7 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <div html-include="./pages/footer.html"></div>
+    <div html-include="./pages/footer.php"></div>
 
     <!-- End Footer -->
 
