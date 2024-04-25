@@ -15,13 +15,13 @@
       <div class="row">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
           <img
-            src="../assets/img/gallery/img-1.jpg"
+            src="./assets/img/gallery/img-1.jpg"
             class="w-100 shadow-1-strong rounded mb-4"
             alt="sample1"
           />
 
           <img
-            src="../assets/img/gallery/img-2.jpg"
+            src="./assets/img/gallery/img-2.jpg"
             class="w-100 shadow-1-strong rounded mb-4"
             alt="sample2"
           />
@@ -29,13 +29,13 @@
 
         <div class="col-lg-4 mb-4 mb-lg-0">
           <img
-            src="../assets/img/gallery/img-3.jpg"
+            src="./assets/img/gallery/img-3.jpg"
             class="w-100 shadow-1-strong rounded mb-4"
             alt="sample3"
           />
 
           <img
-            src="../assets/img/gallery/img-4.jpg"
+            src="./assets/img/gallery/img-4.jpg"
             class="w-100 shadow-1-strong rounded mb-4"
             alt="sample4"
           />
@@ -43,13 +43,13 @@
 
         <div class="col-lg-4 mb-4 mb-lg-0">
           <img
-            src="../assets/img/gallery/img-5.jpg"
+            src="./assets/img/gallery/img-5.jpg"
             class="w-100 shadow-1-strong rounded mb-4"
             alt="sample5"
           />
 
           <img
-            src="../assets/img/gallery/img-6.jpg"
+            src="./assets/img/gallery/img-6.jpg"
             class="w-100 shadow-1-strong rounded mb-4"
             alt="sample6"
           />

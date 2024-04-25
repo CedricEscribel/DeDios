@@ -13,7 +13,7 @@
           better!
         </h5>
         <div class="d-flex justify-content-center justify-content-lg-start">
-          <a href="../contact.html" class="btn-get-started scrollto"
+          <a href="../contact.php" class="btn-get-started scrollto"
             >Book an appointment</a
           >
         </div>
@@ -23,7 +23,7 @@
         data-aos="zoom-in"
         data-aos-delay="200"
       >
-        <img src="../assets/img/about.png" class="img-fluid animated" alt="" />
+        <img src="./assets/img/about.png" class="img-fluid animated" alt="" />
       </div>
     </div>
   </div>

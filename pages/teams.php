@@ -13,7 +13,7 @@
       <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
         <div class="member d-flex align-items-start">
           <div class="pic">
-            <img src="../assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="" />
+            <img src="./assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="" />
           </div>
           <div class="member-info">
             <h4>Dr Cog Dimagiba</h4>
@@ -29,7 +29,7 @@
       >
         <div class="member d-flex align-items-start">
           <div class="pic">
-            <img src="../assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="" />
+            <img src="./assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="" />
           </div>
           <div class="member-info">
             <h4>Dr. Paul Christdeanne de Dios</h4>
