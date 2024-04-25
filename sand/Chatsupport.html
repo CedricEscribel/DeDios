@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>De Dios</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="../assets/img/icon.png" rel="icon" />
+    <link href="../assets/img/icon.png " />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- Navigation bar with back button and logo -->
+      <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <button class="btn btn-outline-secondary mr-2" onclick="goBack()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.354 12.354a.5.5 0 0 1 0-.708L4.707 9.5H13.5a.5.5 0 0 1 0 1H4.707l2.647 2.646a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 1 1 .708.708L4.707 7.5H13.5a1.5 1.5 0 0 1 0 3H4.707l2.647 2.646a.5.5 0 0 1 0 .708z"
+                />
+              </svg>
+            </button>
+            <img
+              src="../assets/img/ChatLogo.png"
+              width="60"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            <span class="ml-2">De Dios Dental</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Chat interface -->
+      <div class="container mt-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="chat-box" id="chat-box">
+              <div class="chat-message received">
+                Welcome to De Dios Dental! How can I help you?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fixed bottom section with sample questions -->
+      <div class="fixed-bottom">
+        <div class="container mt-3">
+          <div class="btn-group" role="group" aria-label="Sample Questions">
+            <button
+              type="button"
+              class="btn btn-info question-btn"
+              data-answer="500-600 peso"
+            >
+              How much is the cost?
+            </button>
+            <button
+              type="button"
+              class="btn btn-info question-btn"
+              data-answer="500-600 peso"
+            >
+              How much is the cost?
+            </button>
+            <button
+              type="button"
+              class="btn btn-info question-btn"
+              data-answer="500-600 peso"
+            >
+              How much is the cost?
+            </button>
+            <button
+              type="button"
+              class="btn btn-info question-btn"
+              data-answer="500-600 peso"
+            >
+              How much is the cost?
+            </button>
+            <button
+              type="button"
+              class="btn btn-info question-btn"
+              data-answer="500-600 peso"
+            >
+              How much is the cost?
+            </button>
+            <button
+              type="button"
+              class="btn btn-info question-btn"
+              data-answer="300 pesos"
+            >
+              How much can pasta cost
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <script src="./script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -33,8 +33,8 @@ function appendMessageWithTyping(message, type, predefined = false) {
             newMessage.classList.add("fade-out");
             setTimeout(function() {
                 newMessage.remove();
-            }, 5000); // 2000ms = 2 seconds before fading out
-        }, 6000 + (message.length * 50)); // Delay before fading out is based on the length of the message
+            }, 2000); // 2000ms = 2 seconds before fading out
+        }, 2000 + (message.length * 50)); // Delay before fading out is based on the length of the message
     }
 }
 
